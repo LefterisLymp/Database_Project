@@ -42,4 +42,20 @@ INSERT INTO store_phone VALUES ('THE01', 6976543227);
 INSERT INTO store_phone VALUES ('THE02', 6976543228);
 INSERT INTO store_phone VALUES ('THE02', 6976543229);
 
-
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (2345178909876, 003.00, 'MySalad', 'BarbaStathis', '2019-7-23', '0000000001');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (1763908753456, 006.00, 'THEyoghurt', 'Delta', '2018-6-5', '0000000002');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (2345178909888, 005.00, 'RedWine', 'Lakonia', '2020-2-2', '0000000003');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (6785178909876, 001.50, 'BestNails', 'MyNail', '2015-7-6', '0000000004');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (2345132109876, 016.99, 'THEkettle', 'DrCook', '2015-8-24', '0000000005');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (3421178909876, 003.00, 'Dog toy', 'MyPet', '2019-9-5', '0000000006');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (2345179999976, 002.50, 'Parizaki', 'Ifantis', '2010-6-6', '0000000002');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (8745178909876, 000.48, 'Apple', 'BarbaStathis', '2009-11-11', '0000000001');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (7865478909876, 001.00, 'Banana', 'BarbaStathis', '2008-7-19', '0000000001');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (9876578909876, 002.10, 'YummyMilk', 'Fage', '2007-7-20', '0000000002');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (2345998769876, 008.80, 'Freezed Octοpus', 'TheFisherman', '2008-8-8', '0000000002');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (3333333909876, 001.20, 'Dog food', 'MyPet', '2006-7-9', '0000000006');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (9909178983542, 003.98 , 'Toothpaste', 'AIM', '2020-4-19', '0000000004');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (1456178909876, 002.66, 'Ultrex for Men', 'Ultrex', '2003-6-19', '0000000004');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (6789178909809, 000.80, 'Lemonade!', 'Epsa', '2003-7-19', '0000000003');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (9087187649876, 006.50, 'Best Pillow', 'DrHome', '2003-7-19', '0000000005');
+INSERT INTO product (barcode, price, product_name, brand_name, first_transaction, category_id) VALUES (9773908753456, 006.00, 'THEyoghurt', 'Fage', '2019-6-5', '0000000002');
