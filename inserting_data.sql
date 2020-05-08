@@ -8,6 +8,7 @@ INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, f
 INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000007, 'Hermione Galanide', '2000-12-05', 17, 2129493540, 'Athens', 1);
 INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000008, 'Aikaterini Andreadakou', '1990-10-31', 69, 2103403540, 'Athens', 1);
 INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000009, 'Kyriake Kalloglou', '1988-10-25', 1742, 2103454540, 'Athens', 1);
+INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000010, 'Pericles Rossoulis', '1994-02-23', 223, 2103419840, 'Athens', 4);
 
 INSERT INTO stores VALUES ('ATH01', 3000, '09:00:00', '20:00:00', 'Gramou', 19, 15267, 'Athens');
 INSERT INTO stores VALUES ('ATH02', 1500, '09:30:00', '20:00:00', 'Smolika', 21, 15287, 'Athens');
