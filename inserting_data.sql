@@ -165,3 +165,16 @@ INSERT INTO offers VALUES ('THE01', 2345178909888, 2, 1);
 INSERT INTO offers VALUES ('THE02', 2345178909888, 5, 4);
 INSERT INTO offers VALUES ('PAT02', 2345178909888, 21, 9);
 
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (2345178909876, 3.19, '2019-9-23', '2019-10-18');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (2345178909888, 4.79, '2020-3-26', '2020-4-16');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (2345179999976, 2.79, '2015-5-2', '2015-11-17');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (8745178909876, 0.43, '2014-6-30', '2014-8-11');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (7865478909876, 0.90, '2012-2-13', '2012-7-16');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9876578909876, 2.68, '2017-5-4', '2017-9-9');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (1456178909876, 2.57, '2016-2-15', '2016-3-3');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908753456, 6.90, '2019-9-6', '2019-10-19');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908700001, 9.39, '2020-1-22', '2020-2-14');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908700002, 8.34, '2019-9-2', '2019-11-11');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908700004, 5.84, '2017-8-10', '2017-8-18');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908700007, 5.39, '2019-11-15', '2019-12-20');
+INSERT INTO older prices (barcode, price, start_date, end_date) VALUES (9773908700008, 9.89, '2018-4-30', '2018-9-10');
