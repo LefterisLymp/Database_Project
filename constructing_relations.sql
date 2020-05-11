@@ -46,21 +46,23 @@ CREATE TABLE stores (
 
 CREATE TABLE transaction_ (
 	payment_method varchar(10),
-    Total_amount numeric(6,2),
-    Total_pieces numeric(3,0),
-    card_num char(7),
-    date_time date,
-    primary key (card_num, date_time),
-    foreign key (card_num) references customer(card_num)
+        Total_amount numeric(6,2),
+        Total_pieces numeric(3,0),
+        card_num char(7),
+        trans_date date,
+        trans_time time,
+        primary key (card_num, trans_date, trans_time),
+        foreign key (card_num) references customer(card_num)
 );
 
 CREATE TABLE contain (
        card_num char(7),
-       date_time date,
+       trans_date date,
+       trans_time time,
        pieces numeric(3, 0),
        barcode numeric(13,0),
-       primary key(card_num, date_time, barcode),
-       foreign key(card_num, date_time) references transaction_(card_num, date_time),
+       primary key(card_num, trans_date, trans_time, barcode),
+       foreign key(card_num, trans_date, trans_time) references transaction_(card_num, trans_date, trans_time),
        foreign key(barcode) references product(barcode)
 );
   
