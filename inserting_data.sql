@@ -203,3 +203,16 @@ INSERT INTO older prices (start_date, end_date, price, barcode) VALUES ('2006-8-
 INSERT INTO older prices (start_date, end_date, price, barcode) VALUES ('2019-12-9', '2019-12-29', 2.50, 2345178909876);
 INSERT INTO older prices (start_date, end_date, price, barcode) VALUES ('2020-1-2', '2020-3-3', 5.99, 1763908753456);
 INSERT INTO older prices (start_date, end_date, price, barcode) VALUES ('2018-6-5', '2018-10-3', 6.99, 1763908753456);
+
+insert into contain (card_num, date_time, barcode, pieces) values (8726109, '2015-7-27 09:00:30.75', 1763908753456, 3);
+insert into contain (card_num, date_time, barcode, pieces) values (8726109, '2018-7-23 10:00:30.75', 6785178909876, 4);
+insert into contain (card_num, date_time, barcode, pieces) values (0000003, '2007-6-12 13:30:30.75', 9773908700006, 1);
+insert into contain (card_num, date_time, barcode, pieces) values (0000006, '2016-4-5 18:27:30.75', 1763908753456, 2);
+insert into contain (card_num, date_time, barcode, pieces) values (0000009, '2015-7-27 09:00:30.74', 6785178909876, 3);
+insert into contain (card_num, date_time, barcode, pieces) values (0000015, '2012-9-17 17:20:30.75', 9773908700006, 1);
+insert into contain (card_num, date_time, barcode, pieces) values (0000021, '2020-4-7 09:45:30.75', 9773908700015, 1);
+insert into contain (card_num, date_time, barcode, pieces) values (0000020, '2018-2-3 14:00:30.75', 1763908753456, 3);
+insert into contain (card_num, date_time, barcode, pieces) values (0000004, '2017-6-26 11:23:30.75', 6785178909876, 2);
+insert into contain (card_num, date_time, barcode, pieces) values (0000020, '2018-5-6 19:00:30.75', 1456178909876, 5);
+insert into contain (card_num, date_time, barcode, pieces) values (0000016, '2016-5-27 09:00:30.75', 9773908700015, 1);
+insert into contain (card_num, date_time, barcode, pieces) values (0000004, '2015-7-27 09:00:30.75', 1456178909876, 2);
