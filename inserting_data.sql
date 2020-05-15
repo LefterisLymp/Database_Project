@@ -9,20 +9,19 @@ INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, f
 INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000008, 'Aikaterini Andreadakou', '1990-10-31', 69, 2103403540, 'Athens', 1);
 INSERT INTO customer(card_num, customer_name, birth_date, points, phone, city, family_members) values (0000009, 'Kyriake Kalloglou', '1988-10-25', 1742, 2103454540, 'Athens', 1);
 
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000011, Christos Ioannou, 1999-7-27, 140, 2108046576, Omirou, 45, 14321, Athens, 6, 1);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000012, Dimitrios Ioannou, 1999-7-25, 260, 2108886576, Ermou, 45, 14321, Athens, 3, 0);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000013, Sofia Dimitriou, 1965-5-20, 40, 2106546576, Fokidos, 6, 14356, Athens, 5, 2);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000014, Georgios Papadopoulos, 1960-6-6, 140, 2108049876, Skoufa, 4, 14322, Athens, 3, 0);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000015, Eleni Ioannou, 1982-7-13, 500, 2108046432, Kapodistria, 1, 15621, Thessaloniki, 0, 0);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000016, Dimitra Christou, 1956-7-27, 10, 2107776576, Iras, 6, 13451, Livadia, 0, 0);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000017, Christina Georgiou, 1999-7-27, 300, 2108952576, Avlidos, 12, 15621, Thessaloniki, 6, 1);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000018, Ioannis Sofokleous, 1950-7-27, 240, 2108046333, Smyrnis, 18, 18721, Patra, 0, 3);
-insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000019, Eleftherios Katsigiannis, 2000-9-8, 80, 694764532, Smyrnis, 7, 18721, Patra, 0, 1);
-insert into customer (card_num, customer_name, birth_date, points, phone, city, street, street_num, postal_code, family_members) values (0000020, Georgios Konstantinou, 1968-10-27, 40, 6987653421, Parou, 4, 15421, Athens, 5, 0);
-insert into customer (card_num, customer_name, birth_date, points, phone, city, street, street_num, postal_code, family_members) values (0000021, Christos Ioannou, 1939-5-25, 380, 2108046576, Omirou, 45, 14321, Athens, 6, 1);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000011, 'Christos Ioannou', '1999-7-27', 140, 2108046576, Omirou, 45, 14321, Athens, 6, 1);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000012, 'Dimitrios Ioannou', '1999-7-25', 260, 2108886576, Ermou, 45, 14321, Athens, 3, 0);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000013, 'Sofia Dimitriou', '1965-5-20', 40, 2106546576, Fokidos, 6, 14356, Athens, 5, 2);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000014, 'Georgios Papadopoulos', '1960-6-6', 140, 2108049876, Skoufa, 4, 14322, Athens, 3, 0);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000015, 'Eleni Ioannou', '1982-7-13', 500, 2108046432, Kapodistria, 1, 15621, Thessaloniki, 0, 0);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000016, 'Dimitra Christou', '1956-7-27', 10, 2107776576, Iras, 6, 13451, Livadia, 0, 0);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000017, 'Christina Georgiou', '1999-7-27', 300, 2108952576, Avlidos, 12, 15621, Thessaloniki, 6, 1);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000018, 'Ioannis Sofokleous', '1950-7-27', 240, 2108046333, Smyrnis, 18, 18721, Patra, 0, 3);
+insert into customer (card_num, customer_name, birth_date, points, phone, street, street_num, postal_code, city, family_members) values (0000019, 'Eleftherios Katsigiannis', '2000-9-8', 80, 694764532, Smyrnis, 7, 18721, Patra, 0, 1);
+insert into customer (card_num, customer_name, birth_date, points, phone, city, street, street_num, postal_code, family_members) values (0000020, 'Georgios Konstantinou', '1968-10-27', 40, 6987653421, Parou, 4, 15421, Athens, 5, 0);
+insert into customer (card_num, customer_name, birth_date, points, phone, city, street, street_num, postal_code, family_members) values (0000021, 'Christos Ioannou', '1939-5-25', 380, 2108046576, Omirou, 45, 14321, Athens, 6, 1);
 
-INSERT INTO stores VALUES ('ATH01', 3000, '09:00:00', '20:00:00', 'Gramou', 19, 15267, 'Athens');
-INSERT INTO stores VALUES ('ATH02', 1500, '09:30:00', '20:00:00', 'Smolika', 21, 15287, 'Athens');
+
 INSERT INTO stores VALUES ('ATH03', 1000, '09:30:00', '20:00:00', 'Parnonos', 256, 14321, 'Athens');
 INSERT INTO stores VALUES ('ATH04', 700, '10:00:00', '20:30:00', 'Olympou', 3, 15067, 'Athens');
 INSERT INTO stores VALUES ('ATH05', 1500, '09:00:00', '20:00:00', 'Taygetou', 4, 15864, 'Athens');
