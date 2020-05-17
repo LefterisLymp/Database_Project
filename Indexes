@@ -1,0 +1,4 @@
+create index customer_index on customer(card_num);
+create index store_index on stores(store_id);
+create index product_index on product(barcode);
+create index category_index on category(category_id);
