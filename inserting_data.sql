@@ -432,9 +432,6 @@ INSERT INTO offers VALUES ('THE01', 2345178909888, 2, 1);
 INSERT INTO offers VALUES ('THE02', 2345178909888, 5, 4);
 INSERT INTO offers VALUES ('PAT02', 2345178909888, 21, 9);
 
-Create view Total_pieces as
-select transaction_.*, sum(pieces) from (transaction_ inner join contain on (transaction_.card_num = contain.card_num and transaction_.date_time = contain.date_time));
-
 INSERT INTO offers VALUES ('ATH01', 6785178909876, 3, 5);
 INSERT INTO offers VALUES ('ATH02', 6785178909876, 8, 1);
 INSERT INTO offers VALUES ('ATH03', 6785178909876, 4, 2);
@@ -463,3 +460,6 @@ INSERT INTO offers VALUES ('PAT03', 3421178909876, 10, 2);
 INSERT INTO offers VALUES ('THE01', 3421178909876, 2, 1);
 INSERT INTO offers VALUES ('THE02', 3421178909876, 5, 4);
 INSERT INTO offers VALUES ('PAT02', 3421178909876, 21, 9);
+
+Create view Total_pieces as
+select transaction_.*, sum(pieces) from (transaction_ inner join contain on (transaction_.card_num = contain.card_num and transaction_.date_time = contain.date_time));
