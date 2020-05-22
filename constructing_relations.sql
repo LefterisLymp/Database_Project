@@ -56,18 +56,18 @@ CREATE TABLE transaction_ (
 CREATE TABLE contain (
        card_num char(7),
        date_time datetime,
-       pieces numeric(3, 0),
        barcode numeric(13,0),
+       pieces numeric(3, 0),
        primary key(card_num, date_time, barcode),
        foreign key(card_num, date_time) references transaction_(card_num, date_time),
        foreign key(barcode) references product(barcode)
 );
   
 CREATE TABLE older_prices(
+       barcode numeric(13,0),
        start_date date,
        end_date date,
        price numeric(5,2),
-       barcode numeric(13,0),
        primary key(start_date, barcode),
        foreign key(barcode) references product(barcode)
 );
@@ -96,3 +96,6 @@ CREATE TABLE offers (
 	foreign key (store_id) references stores(store_id),
 	foreign key (barcode) references product(barcode)
 );
+
+Create view Total_pieces as
+select transaction_.*, sum(pieces) from (transaction_ inner join contain on (transaction_.card_num = contain.card_num and transaction_.date_time = contain.date_time));
