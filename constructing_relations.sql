@@ -98,4 +98,6 @@ CREATE TABLE offers (
 );
 
 Create view Total_pieces as
-select transaction_.*, sum(pieces) from (transaction_ inner join contain on (transaction_.card_num = contain.card_num and transaction_.date_time = contain.date_time));
+select C.card_num, C.date_time, sum(C.pieces) as Totpcs
+from contain as C
+group by C.card_num, C.date_time;total_pieces
