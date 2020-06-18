@@ -1,0 +1,18 @@
+/*
+6g. a) The most popular payment method and number of transactions with this method
+    b) Store with greater product variety and how many different products it offers
+*/
+
+SELECT payment_method AS p, max(counter) 
+FROM(
+  SELECT p, COUNT(*) AS counter
+  FROM transaction_
+  GROUP BY p
+);
+   
+SELECT store_id AS s, max(products_offered) 
+FROM(
+  SELECT s, COUNT(barcode) AS products_offered
+  FROM offers
+  GROUP BY s
+);
