@@ -1,7 +1,7 @@
 /*Most spendful hour (for all stores)*/
-SELECT HOUR(date_time) as h, max(Total_amount)
+SELECT HOUR(date_time) as h, max(Total)
 FROM(
-SELECT h, sum(Total_amount)
+SELECT h, sum(Total_amount) as Total
 FROM transaction_
 GROUP BY h);
 
