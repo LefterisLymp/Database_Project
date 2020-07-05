@@ -7,6 +7,15 @@ insert into transaction_ values ('card', 32.99, 0000020, '2018-02-03 14:00:30', 
 insert into transaction_ values ('card', 12.25, 0000004, '2017-06-26 11:23:30','ATH01');
 insert into transaction_ values ('card', 57.25, 0000020, '2018-05-06 19:00:30','ATH02');
 
+insert into transaction_ values ('card', 35.03, 0000003, '2007-06-12 13:35:30','ATH01');
+insert into transaction_ values ('card', 10.25, 0000006, '2016-04-05 19:27:30','ATH01');
+insert into transaction_ values ('cash', 37.25, 0000009, '2015-07-27 20:00:30','ATH03');
+insert into transaction_ values ('cash', 119.25, 0000015, '2012-09-17 08:20:30','ATH04');
+insert into transaction_ values ('cash', 34.00, 0000021, '2020-04-07 10:45:30','ATH04');
+insert into transaction_ values ('card', 32.99, 0000020, '2018-02-03 14:34:30', 'ATH01');
+insert into transaction_ values ('card', 12.25, 0000004, '2017-06-26 12:23:30','ATH01');
+insert into transaction_ values ('card', 57.25, 0000020, '2018-05-06 19:40:30','ATH02');
+
 insert into transaction_ values ('cash', 42.17, 0000016, '2016-05-27 09:00:30','ATH02');
 insert into transaction_ values ('cash', 32.22, 0000004, '2015-07-27 09:00:30','ATH02');
 insert into transaction_ values ('cash', 32.25, 0000000, '2015-07-25 12:30:10','ATH02');
@@ -23,9 +32,12 @@ insert into transaction_ values ('card', 57.25, 0000016, '2018-05-06 19:00:30','
 insert into transaction_ values ('cash', 42.17, 0000016, '2016-05-29 16:10:30','THE01');
 insert into transaction_ values ('cash', 42.17, 0000016, '2016-05-28 12:50:30','THE02');
 
-insert into transaction_ values ('cash', 32.22, 0000004, '2015-07-28 14:50:30','ATH02');
-insert into transaction_ values ('cash', 38.25, 0000011, '2014-07-27 09:40:30','ATH01');
-insert into transaction_ values ('card', 45.15, 0000004, '2018-07-23 10:00:30','PAT03');
-insert into transaction_ values ('card', 35.73, 0000000, '2007-06-12 20:30:30','PAT02');
-insert into transaction_ values ('card', 10.25, 0000004, '2012-01-05 18:27:30','PAT01');
-insert into transaction_ values ('card', 32.99, 0000000, '2020-05-04 14:00:30','ATH01');
+insert into transaction_ values ('card', 32.22, 0000004, '2015-07-08 14:50:30','ATH02');
+insert into transaction_ values ('cash', 38.25, 0000011, '2014-05-27 09:40:30','ATH01');
+insert into transaction_ values ('cash', 45.15, 0000004, '2018-04-23 10:00:30','PAT03');
+insert into transaction_ values ('card', 35.73, 0000000, '2008-06-12 20:30:30','PAT02');
+insert into transaction_ values ('cash', 10.25, 0000004, '2013-01-05 18:27:30','PAT01');
+insert into transaction_ values ('card', 32.99, 0000000, '2020-05-04 14:00:30','ATH02');
+
+
+
