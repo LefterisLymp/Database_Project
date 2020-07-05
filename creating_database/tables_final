@@ -1,0 +1,106 @@
+CREATE TABLE customer(
+       card_num char(7),
+       customer_name varchar(50) DEFAULT NULL,
+       birth_date DATE DEFAULT NULL,
+       age numeric(3,0) GENERATED ALWAYS AS (FLOOR(DATEDIFF('2020-01-01', birth_date) / 365.2425)),
+       points int DEFAULT 0,
+       phone numeric(10,0) DEFAULT NULL,
+       street varchar(50) DEFAULT NULL,
+       street_num numeric(3,0) DEFAULT NULL,
+       postal_code numeric(5,0) DEFAULT NULL,
+       city varchar(50) DEFAULT NULL,
+       family_members numeric(1,0) DEFAULT NULL,
+       pet numeric(3,0) DEFAULT NULL,
+       primary key(card_num)
+);
+
+CREATE TABLE category(
+       category_id numeric(2, 0),
+       category_name varchar(50),
+       primary key(category_id)
+);
+
+CREATE TABLE product(
+       barcode numeric(13,0),
+       price numeric(5, 2) NOT NULL,
+       product_name varchar(50) NOT NULL,
+       brand_name varchar(50) NOT NULL,
+       first_transaction date,
+       category_id numeric(2, 0),
+       primary key(barcode),
+       check(price > 0)
+);
+
+CREATE TABLE stores (
+	store_id varchar(5),
+	size numeric (5,0),
+	open_time TIME(0) NOT NULL,
+	close_time TIME(0) NOT NULL,
+	street varchar (15) NOT NULL,
+	number_ numeric (3,0) NOT NULL,
+	postal_code numeric (5,0) NOT NULL,
+	city varchar(15) NOT NULL,
+	primary key (store_id),
+            check(size>0)
+);
+
+CREATE TABLE transaction_ (
+    payment_method varchar(10),
+    Total_amount numeric(6,2),
+    card_num char(7),
+    date_time datetime,
+    store_id char(5) NOT NULL,
+    primary key (card_num, date_time),
+    foreign key (card_num) references customer(card_num),
+    check(Total_amount > 0)
+);
+
+CREATE TABLE contain (
+       card_num char(7),
+       date_time datetime,
+       barcode numeric(13,0),
+       pieces numeric(3, 0) NOT NULL,
+       primary key(card_num, date_time, barcode),
+    foreign key(card_num, date_time) references transaction_(card_num, date_time) on delete cascade,
+       foreign key(barcode) references product(barcode) on delete cascade
+);
+  
+CREATE TABLE older_prices(
+       barcode numeric(13,0),
+       start_date date,
+       end_date date,
+       price numeric(5,2) NOT NULL,
+       primary key(start_date, barcode),
+       foreign key(barcode) references product(barcode) on delete cascade,
+       check (end_date > start_date)
+);
+
+CREATE TABLE store_phone (
+	store_id varchar(5),
+	phone numeric(10,0),
+	primary key (phone),
+	foreign key (store_id) references stores(store_id) on delete cascade
+);
+
+CREATE TABLE provides (
+	category_id numeric(2, 0),
+	store_id varchar(5),
+	primary key (category_id, store_id),
+	foreign key (store_id) references stores(store_id),
+	foreign key (category_id) references category(category_id)
+);
+
+CREATE TABLE offers (
+	store_id varchar(5),
+	barcode numeric(13,0),
+	alley numeric(3,0) DEFAULT NULL,
+	shelf numeric(2,0) DEFAULT NULL,
+	primary key (store_id, barcode),
+	foreign key (store_id) references stores(store_id),
+	foreign key (barcode) references product(barcode)
+);
+
+Create view Total_pieces as
+select C.card_num as CardNo, C.date_time as DateT, sum(C.pieces) as Totpcs
+from contain as C
+group by C.card_num, C.date_time;
