@@ -10,3 +10,12 @@
         inserting_contains: Δεδομένα για τα contains.
         inserting_olderprices1_2.sql, inserting_olderprices3_4.sql: Δεδομένα για το older prices για τα προϊόντα των κατηγοριών 1, 2, 3, 4. Θα βρείτε και ένα πρόγραμμα C++, το olderprices.cpp. Αυτό το έγραψα ώστε να τυπώνει εντολές σε SQL για να μην χρειάζεται να τις γράφετε εσείς. Παίρνουν ως input το barcode και την τιμή του προϊόντος όπως είναι στο product και τυπώνουν 36 γραμμές με εντολές για παλιότερες τιμές. Θα σας παρακαλούσα να φτιάξετε με αυτό το πρόγραμμα τις εντολές για τα προϊόντα των κατηγοριών 5, 6.
 Η σειρά του compilation είναι αυτή με την οποία έγραψα τα προγράμματα παραπάνω.
+
+/*CREATE TRIGGER delete_product BEFORE DELETE ON product
+FOR EACH ROW
+BEGIN
+  /*We delete all the tuples in "offers" related to this product*/
+  DELETE FROM offers WHERE barcode = old.barcode;
+  /*We want to mantain information for old products*/
+END;*/
+
