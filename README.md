@@ -1,6 +1,6 @@
 # Database_Project
 
-Τα αρχεία που κατασκευάζουν τη άση είναι
+Τα αρχεία που κατασκευάζουν τη βάση είναι
 
 	constructing_relations.sql: Μικροαλλαγές ως προς τη σειρά των attributes, επίσης μεταφέρθηκε το view για τα Total_pieces εκεί.
 	inserting_customers&stores.sql: Δεδομένα για τους customers, stores και store_phones.
