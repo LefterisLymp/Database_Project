@@ -11,14 +11,6 @@ END;
 
 |
 
-/*CREATE TRIGGER delete_product BEFORE DELETE ON product
-FOR EACH ROW
-BEGIN
-  /*We delete all the tuples in "offers" related to this product*/
-  DELETE FROM offers WHERE barcode = old.barcode;
-  /*We want to mantain information for old products*/
-END;*/
-
 CREATE TRIGGER delete_product BEFORE DELETE ON product
 FOR EACH ROW
 BEGIN
