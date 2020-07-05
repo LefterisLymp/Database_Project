@@ -7,9 +7,6 @@ ORDER BY pieces_bought DESC
 LIMIT 10 OFFSET 0;*/
 
 /*Which and how many stores does the customer visit*/
-/*FROM transaction_
-WHERE transaction_.card_num = 4;
-
 SELECT count(distinct store_id)
 FROM transaction_
 WHERE transaction_.card_num = 4;*/
