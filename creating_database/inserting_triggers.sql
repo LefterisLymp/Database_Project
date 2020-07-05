@@ -11,13 +11,21 @@ END;
 
 |
 
-CREATE TRIGGER delete_product BEFORE DELETE ON product
+/*CREATE TRIGGER delete_product BEFORE DELETE ON product
 FOR EACH ROW
 BEGIN
   /*We delete all the tuples in "offers" related to this product*/
   DELETE FROM offers WHERE barcode = old.barcode;
   /*We want to mantain information for old products*/
-END;
+END;*/
+
+CREATE TRIGGER delete_product BEFORE DELETE ON product
+FOR EACH ROW
+BEGIN
+  /*We want to mantain information for old products*/
+  SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'DELETE canceled! We want information for old products. 
+  Delete product from "offers" table instead';  
+END
 
 |
 
